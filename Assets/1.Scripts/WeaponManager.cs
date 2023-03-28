@@ -38,9 +38,10 @@ public class WeaponManager : MonoBehaviour
         equippedWeapon = weaponData;
         if (currentWeapon != null) //if there is a weapon currently equipped, destroy the currentweapon
         {
-            Destroy(currentWeapon);
+            //Destroy(currentWeapon);
+            currentWeapon.SetActive(false); 
         }
-
+        //set all in the hand and just activate when you need it
         currentWeapon = Instantiate(equippedWeapon.weaponPrefab);
         currentWeapon.transform.SetParent(weaponSlot);
         currentWeapon.transform.localPosition = Vector3.zero;
