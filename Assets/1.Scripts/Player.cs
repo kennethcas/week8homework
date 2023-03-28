@@ -50,9 +50,4 @@ public class Player : MonoBehaviour
         charController.Move(move * Time.deltaTime * speed);
 
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        
-    }
 }

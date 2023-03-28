@@ -14,6 +14,6 @@ public class Weapon : MonoBehaviour
         {
             weaponManager.EquipWeapon(weaponData);
         }
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 }
