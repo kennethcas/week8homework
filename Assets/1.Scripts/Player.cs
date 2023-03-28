@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private CharacterController charController;
-    private float speed = 5;
+    private float speed = 3;
     private float mouseSensitivity = 3.5f;
 
     Transform cameraTrans;
@@ -53,10 +53,6 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy"))
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-        }
+        
     }
 }
